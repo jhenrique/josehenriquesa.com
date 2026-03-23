@@ -153,18 +153,23 @@ body:has(button:hover) #cur { width: 44px; height: 44px; }
   border: none;
   background: transparent;
   color: var(--muted);
-  font-family: var(--fM);
-  font-size: 18px;
-  line-height: 1;
-  padding: 8px 9px;
+  padding: 6px;
   border-radius: 999px;
   cursor: none;
-  transition: background .2s, color .2s;
+  transition: background .2s, color .2s, transform .2s;
+}
+.flag-icon {
+  display: block;
+  width: 24px;
+  height: 18px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.08);
 }
 .lang-btn:hover,
 .lang-btn.active {
   background: rgba(255,92,0,.15);
   color: var(--orange);
+  transform: translateY(-1px);
 }
 
 .burger {
@@ -888,7 +893,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   #nav { padding: 18px 28px; }
   .nav-links { display: none; }
   .nav-cta { display: none; }
-  .lang-btn { padding: 7px 9px; }
+  .lang-btn { padding: 5px; }
+  .flag-icon { width: 22px; height: 16px; }
   .burger { display: flex; }
   .section-wrap { padding: 80px 28px; }
   .hero-wrap { padding: 40px 28px 20px; }

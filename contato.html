@@ -57,8 +57,8 @@
     .soc-link:hover{border-color:var(--orange);color:var(--orange);background:rgba(255,92,0,.08)}
     .soc-link svg{width:16px;height:16px}
     .lang-switcher{display:flex;align-items:center;gap:6px;padding:4px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.03)}
-    .lang-btn{border:none;background:transparent;color:var(--muted);font-family:var(--fM);font-size:18px;line-height:1;padding:8px 9px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
-    .lang-btn:hover,.lang-btn.active{background:rgba(255,92,0,.15);color:var(--orange)}
+    .lang-btn{border:none;background:transparent;color:var(--muted);padding:6px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s,transform .2s}.flag-icon{display:block;width:24px;height:18px;border-radius:4px;box-shadow:0 0 0 1px rgba(255,255,255,.08)}
+    .lang-btn:hover,.lang-btn.active{background:rgba(255,92,0,.15);color:var(--orange);transform:translateY(-1px)}
 
     /* ── PAGE HERO ──────────────────────────────────── */
     .page-hero{position:relative;z-index:1;padding:100px 56px 64px;max-width:1200px;margin:0 auto;width:100%}
@@ -214,7 +214,7 @@
       header{padding:16px 24px}
       .header-center{display:none}
       .header-actions{width:100%;justify-content:flex-end}
-      .lang-btn{padding:7px 8px;font-size:17px}
+      .lang-btn{padding:5px}.flag-icon{width:22px;height:16px}
       .page-hero{padding:70px 24px 48px}
       .main-grid{padding:0 24px 80px}
       .form-panel{padding:32px 24px}
@@ -252,9 +252,9 @@
 
     <div class="header-actions">
       <div class="lang-switcher" aria-label="Language">
-        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">🇺🇸</button>
-        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">🇪🇸</button>
-        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">🇧🇷</button>
+        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true"><img src="images/flag-us.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false"><img src="images/flag-es.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false"><img src="images/flag-br.svg" alt="" class="flag-icon" /></button>
       </div>
 
       <div class="socials" aria-label="Social media">
