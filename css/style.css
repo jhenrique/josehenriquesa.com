@@ -140,6 +140,33 @@ body:has(button:hover) #cur { width: 44px; height: 44px; }
   box-shadow: 0 8px 24px rgba(255,92,0,.4);
 }
 
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.03);
+}
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--fM);
+  font-size: 11px;
+  letter-spacing: .08em;
+  padding: 8px 10px;
+  border-radius: 999px;
+  cursor: none;
+  transition: background .2s, color .2s;
+}
+.lang-btn:hover,
+.lang-btn.active {
+  background: rgba(255,92,0,.15);
+  color: var(--orange);
+}
+
 .burger {
   display: none;
   flex-direction: column;
@@ -861,6 +888,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   #nav { padding: 18px 28px; }
   .nav-links { display: none; }
   .nav-cta { display: none; }
+  .lang-btn { padding: 7px 9px; }
   .burger { display: flex; }
   .section-wrap { padding: 80px 28px; }
   .hero-wrap { padding: 40px 28px 20px; }
