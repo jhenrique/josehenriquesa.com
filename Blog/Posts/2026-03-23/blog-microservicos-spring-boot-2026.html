@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MicrosserviÃ§os com Spring Boot: boas prÃ¡ticas em 2026 | Jose Henrique</title>
-  <meta name="description" content="Guia prÃ¡tico sobre arquitetura, contexto, aplicaÃ§Ã£o e casos de uso de microsserviÃ§os com Spring Boot em 2026." />
+  <title>Microsserviços com Spring Boot: boas práticas em 2026 | Jose Henrique</title>
+  <meta name="description" content="Guia prático sobre arquitetura, contexto, aplicação e casos de uso de microsserviços com Spring Boot em 2026." />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
@@ -22,13 +22,13 @@
 
   <header id="nav">
     <div class="nav-inner">
-      <a href="/index.html" class="logo" aria-label="InÃ­cio">
+      <a href="/index.html" class="logo" aria-label="Início">
         <span class="logo-box">JH</span>
       </a>
       <nav aria-label="Menu">
         <ul class="nav-links">
           <li><a href="/index.html#sobre">Sobre</a></li>
-          <li><a href="/index.html#experiencia">ExperiÃªncia</a></li>
+          <li><a href="/index.html#experiencia">Experiência</a></li>
           <li><a href="/index.html#projetos">Projetos</a></li>
           <li><a href="/index.html#blog">Blog</a></li>
         </ul>
@@ -37,8 +37,8 @@
       <a href="/contato.html" class="nav-cta">Contato <span aria-hidden="true">&#x2192;</span></a>
       <div class="lang-switcher" aria-label="Idiomas">
         <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true" aria-label="English" title="English"><img src="/images/flag-us.svg" alt="" class="flag-icon" /></button>
-        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" aria-label="EspaÃ±ol" title="EspaÃ±ol"><img src="/images/flag-es.svg" alt="" class="flag-icon" /></button>
-        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false" aria-label="PortuguÃªs" title="PortuguÃªs"><img src="/images/flag-br.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" aria-label="Español" title="Español"><img src="/images/flag-es.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false" aria-label="Português" title="Português"><img src="/images/flag-br.svg" alt="" class="flag-icon" /></button>
       </div>
       <div class="nav-socials" aria-label="Redes sociais">
         <a href="https://www.linkedin.com/in/jose-henrique-dev-java/" target="_blank" rel="noopener" class="nav-soc" aria-label="LinkedIn">
@@ -61,7 +61,7 @@
     <button class="mob-close" id="mobClose" aria-label="Fechar menu">&#x2715;</button>
     <nav><ul>
       <li><a href="/index.html#sobre" class="mob-link">Sobre</a></li>
-      <li><a href="/index.html#experiencia" class="mob-link">ExperiÃªncia</a></li>
+      <li><a href="/index.html#experiencia" class="mob-link">Experiência</a></li>
       <li><a href="/index.html#projetos" class="mob-link">Projetos</a></li>
       <li><a href="/index.html#blog" class="mob-link">Blog</a></li>
       <li><a href="/contato.html" class="mob-link">Contato</a></li>
@@ -70,37 +70,37 @@
 
   <main class="article-main">
     <article class="article-shell">
-      <p class="article-label ri">Java Â· Backend</p>
-      <h1 class="article-title ri">MicrosserviÃ§os com Spring Boot: boas prÃ¡ticas em 2026</h1>
-      <p class="article-sub ri">Como organizar arquitetura, operaÃ§Ã£o e evoluÃ§Ã£o contÃ­nua de microsserviÃ§os em ambientes cloud, com foco em resiliÃªncia, observabilidade e escala.</p>
+      <p class="article-label ri">Java · Backend</p>
+      <h1 class="article-title ri">Microsserviços com Spring Boot: boas práticas em 2026</h1>
+      <p class="article-sub ri">Como organizar arquitetura, operação e evolução contínua de microsserviços em ambientes cloud, com foco em resiliência, observabilidade e escala.</p>
 
       <div class="article-meta ri">
-        <span>Publicado em 23 de marÃ§o de 2026</span>
+        <span>Publicado em 23 de março de 2026</span>
         <span>Autor: Jose Henrique Santos Andrade</span>
         <span>Texto gerado por IA e revisado por um humano.</span>
       </div>
 
       <div class="article-content">
         <h2 class="ri">Contexto</h2>
-        <p class="ri">Em 2026, microsserviÃ§os jÃ¡ nÃ£o sÃ£o apenas uma decisÃ£o tÃ©cnica: sÃ£o uma decisÃ£o de organizaÃ§Ã£o. Times que precisam evoluir produtos com ciclos curtos, mÃºltiplas integraÃ§Ãµes e diferentes ritmos de entrega se beneficiam de serviÃ§os independentes, com ownership claro e fronteiras de domÃ­nio bem definidas.</p>
-        <p class="ri">Com Spring Boot, o ganho estÃ¡ em produtividade com padrÃ£o corporativo: inicializaÃ§Ã£o rÃ¡pida, integraÃ§Ã£o com ecossistema Spring e estrutura consistente para APIs, mensageria, seguranÃ§a e telemetria.</p>
+        <p class="ri">Em 2026, microsserviços já não são apenas uma decisão técnica: são uma decisão de organização. Times que precisam evoluir produtos com ciclos curtos, múltiplas integrações e diferentes ritmos de entrega se beneficiam de serviços independentes, com ownership claro e fronteiras de domínio bem definidas.</p>
+        <p class="ri">Com Spring Boot, o ganho está em produtividade com padrão corporativo: inicialização rápida, integração com ecossistema Spring e estrutura consistente para APIs, mensageria, segurança e telemetria.</p>
 
-        <h2 class="ri">AplicaÃ§Ã£o prÃ¡tica</h2>
-        <p class="ri">A base de uma arquitetura saudÃ¡vel comeÃ§a pelo desenho de domÃ­nio. Antes de criar serviÃ§os, vale mapear capacidades de negÃ³cio e responsabilidades, evitando microserviÃ§os â€œfinos demaisâ€ que sÃ³ geram acoplamento distribuÃ­do. Um serviÃ§o bem definido deve ter dados prÃ³prios, contratos claros e autonomia de deploy.</p>
-        <p class="ri">No runtime, trÃªs pilares sustentam a operaÃ§Ã£o: observabilidade, tolerÃ¢ncia a falhas e automaÃ§Ã£o. Isso inclui logs estruturados, mÃ©tricas, tracing distribuÃ­do, circuit breaker, timeout, retry com backoff e pipelines de build/deploy com testes automatizados desde a camada unitÃ¡ria atÃ© contratos.</p>
+        <h2 class="ri">Aplicação prática</h2>
+        <p class="ri">A base de uma arquitetura saudável começa pelo desenho de domínio. Antes de criar serviços, vale mapear capacidades de negócio e responsabilidades, evitando microserviços “finos demais” que só geram acoplamento distribuído. Um serviço bem definido deve ter dados próprios, contratos claros e autonomia de deploy.</p>
+        <p class="ri">No runtime, três pilares sustentam a operação: observabilidade, tolerância a falhas e automação. Isso inclui logs estruturados, métricas, tracing distribuído, circuit breaker, timeout, retry com backoff e pipelines de build/deploy com testes automatizados desde a camada unitária até contratos.</p>
 
-        <h2 class="ri">Boas prÃ¡ticas essenciais</h2>
+        <h2 class="ri">Boas práticas essenciais</h2>
         <ul class="ri">
-          <li>Modelar contratos por versÃ£o e governar compatibilidade para evitar quebra entre consumidores.</li>
-          <li>Usar banco por serviÃ§o quando possÃ­vel, reduzindo acoplamento de dados e dependÃªncia cruzada.</li>
-          <li>Padronizar telemetria desde o primeiro dia para facilitar anÃ¡lise de incidentes e tuning de performance.</li>
-          <li>Aplicar seguranÃ§a em profundidade: autenticaÃ§Ã£o forte, autorizaÃ§Ã£o por escopo e gestÃ£o de segredos.</li>
-          <li>Evitar transaÃ§Ãµes distribuÃ­das longas, preferindo eventos e consistÃªncia eventual quando necessÃ¡rio.</li>
+          <li>Modelar contratos por versão e governar compatibilidade para evitar quebra entre consumidores.</li>
+          <li>Usar banco por serviço quando possível, reduzindo acoplamento de dados e dependência cruzada.</li>
+          <li>Padronizar telemetria desde o primeiro dia para facilitar análise de incidentes e tuning de performance.</li>
+          <li>Aplicar segurança em profundidade: autenticação forte, autorização por escopo e gestão de segredos.</li>
+          <li>Evitar transações distribuídas longas, preferindo eventos e consistência eventual quando necessário.</li>
         </ul>
 
         <h2 class="ri">Casos de uso</h2>
-        <p class="ri">No e-commerce, separar catÃ¡logo, checkout, pagamento e antifraude permite escalar cada fluxo de forma independente em perÃ­odos de pico. Em fintech, microsserviÃ§os ajudam a isolar trilhas crÃ­ticas de conciliaÃ§Ã£o, liquidaÃ§Ã£o e risco. Em telecom, facilitam evoluÃ§Ã£o de jornadas digitais sem travar sistemas legados.</p>
-        <p class="ri">Quando combinados com Kubernetes e boas prÃ¡ticas de engenharia de plataforma, microsserviÃ§os com Spring Boot entregam velocidade com governanÃ§a, mantendo equilÃ­brio entre autonomia dos times e consistÃªncia operacional.</p>
+        <p class="ri">No e-commerce, separar catálogo, checkout, pagamento e antifraude permite escalar cada fluxo de forma independente em períodos de pico. Em fintech, microsserviços ajudam a isolar trilhas críticas de conciliação, liquidação e risco. Em telecom, facilitam evolução de jornadas digitais sem travar sistemas legados.</p>
+        <p class="ri">Quando combinados com Kubernetes e boas práticas de engenharia de plataforma, microsserviços com Spring Boot entregam velocidade com governança, mantendo equilíbrio entre autonomia dos times e consistência operacional.</p>
 
         <div class="article-actions ri">
           <a href="/index.html#blog" class="btn-ghost">Voltar para o Blog</a>
@@ -113,7 +113,7 @@
   <footer>
     <div class="footer-inner">
       <a href="/index.html" class="logo"><span class="logo-box">JH</span></a>
-      <p>&#169; 2026 Jose Henrique Santos Andrade Â· josehenriquesa.com</p>
+      <p>&#169; 2026 Jose Henrique Santos Andrade · josehenriquesa.com</p>
       <div class="footer-links">
         <a href="mailto:henrique.lavras@gmail.com" aria-label="Email">Email</a>
         <a href="https://www.linkedin.com/in/jose-henrique-dev-java/" target="_blank" rel="noopener" class="footer-soc" aria-label="LinkedIn">
