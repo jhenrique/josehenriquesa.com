@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header-controls.css" />
 </head>
 <body data-page="home">
 
@@ -37,9 +38,9 @@
 
       <a href="contato.html" class="nav-cta">Contato <span aria-hidden="true">&#x2192;</span></a>
       <div class="lang-switcher" aria-label="Idiomas">
-        <button type="button" class="lang-btn active" aria-pressed="true" aria-label="English" title="English"><img src="images/flag-us.svg" alt="" class="flag-icon" /></button>
-        <button type="button" class="lang-btn" aria-pressed="false" aria-label="Español" title="Español"><img src="images/flag-es.svg" alt="" class="flag-icon" /></button>
-        <button type="button" class="lang-btn" aria-pressed="false" aria-label="Português" title="Português"><img src="images/flag-br.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true" aria-label="English" title="English"><img src="images/flag-us.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" aria-label="Español" title="Español"><img src="images/flag-es.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false" aria-label="Português" title="Português"><img src="images/flag-br.svg" alt="" class="flag-icon" /></button>
       </div>
       <div class="nav-socials" aria-label="Redes sociais">
         <a href="https://www.linkedin.com/in/jose-henrique-dev-java/" target="_blank" rel="noopener" class="nav-soc" aria-label="LinkedIn">
@@ -552,7 +553,10 @@
     </div>
   </footer>
 
+  <script src="js/site-effects.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/i18n.js" defer></script>
 </body>
 </html>
+
+
