@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+?<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contato â€” Jose Henrique</title>
-  <meta name="description" content="Entre em contato com Jose Henrique Santos Andrade â€” Desenvolvedor Java SÃªnior." />
+  <title>Contato — Jose Henrique</title>
+  <meta name="description" content="Entre em contato com Jose Henrique Santos Andrade — Desenvolvedor Java Sênior." />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
@@ -41,7 +41,7 @@
     canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
     .grid-overlay{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(255,92,0,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,92,0,.025) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 80% at 50% 30%,black 0%,transparent 100%)}
 
-    /* â”€â”€ HEADER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── HEADER ─────────────────────────────────────── */
     header{position:sticky;top:0;z-index:100;padding:20px 56px;border-bottom:1px solid var(--border);background:rgba(10,10,10,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:space-between;gap:24px}
     .logo{text-decoration:none;display:flex;align-items:center}
     .logo-box{width:40px;height:40px;background:var(--orange);color:#000;font-family:var(--fD);font-size:16px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;border-radius:4px;transition:transform .25s var(--ease)}
@@ -59,7 +59,7 @@
     .soc-link svg{width:16px;height:16px}
 
 
-    /* â”€â”€ PAGE HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── PAGE HERO ──────────────────────────────────── */
     .page-hero{position:relative;z-index:1;padding:100px 56px 64px;max-width:1200px;margin:0 auto;width:100%}
     .ph-label{font-family:var(--fM);font-size:11px;color:var(--orange);letter-spacing:.22em;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px;opacity:0;animation:up .8s var(--ease) .1s forwards}
     .ph-label::before{content:'';width:24px;height:1px;background:var(--orange)}
@@ -69,10 +69,10 @@
     .ph-title em{font-style:normal;color:transparent;-webkit-text-stroke:2.5px var(--orange)}
     .ph-sub{font-size:18px;color:var(--muted);line-height:1.7;max-width:520px;opacity:0;animation:up .9s var(--ease) .4s forwards}
 
-    /* â”€â”€ MAIN GRID â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── MAIN GRID ──────────────────────────────────── */
     .main-grid{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 56px 100px;display:grid;grid-template-columns:380px 1fr;gap:64px;align-items:start}
 
-    /* â”€â”€ LEFT: info panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── LEFT: info panel ───────────────────────────── */
     .info-panel{position:sticky;top:100px;display:flex;flex-direction:column;gap:36px}
 
     .info-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;transition:border-color .25s}
@@ -117,7 +117,7 @@
     .avail-text strong{display:block;font-size:14px;font-weight:600;color:#4ade80;margin-bottom:3px}
     .avail-text span{font-size:12px;color:var(--muted)}
 
-    /* â”€â”€ RIGHT: form â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── RIGHT: form ────────────────────────────────── */
     .form-panel{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:48px;position:relative;overflow:hidden}
     .form-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--orange),var(--orange2),transparent)}
 
@@ -193,7 +193,7 @@
     .form-progress.show{display:block}
     .fp-bar{height:100%;background:linear-gradient(to right,var(--orange),var(--orange2));width:0;transition:width .5s var(--ease);border-radius:2px}
 
-    /* â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── FOOTER ─────────────────────────────────────── */
     footer{position:relative;z-index:1;padding:28px 56px;border-top:1px solid var(--border);background:var(--black);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:auto}
     .footer-left{display:flex;align-items:center;gap:20px}
     .footer-dot{width:6px;height:6px;background:var(--orange);border-radius:50%;display:inline-block;margin-right:8px;animation:blink 2.4s ease-in-out infinite}
@@ -204,7 +204,7 @@
     /* focus */
     a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:6px}
 
-    /* â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── RESPONSIVE ──────────────────────────────────── */
     @media(max-width:1050px){
       .main-grid{grid-template-columns:1fr;gap:40px}
       .info-panel{position:static}
@@ -234,15 +234,15 @@
   <canvas id="cv" aria-hidden="true"></canvas>
   <div class="grid-overlay" aria-hidden="true"></div>
 
-  <!-- â”€â”€ HEADER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- ── HEADER ──────────────────────────────────────── -->
   <header>
-    <a href="index.html" class="logo" aria-label="InÃ­cio">
+    <a href="index.html" class="logo" aria-label="Início">
       <span class="logo-box">JH</span>
     </a>
 
     <nav class="header-center" aria-label="Menu principal">
       <a href="index.html#sobre">Sobre</a>
-      <a href="index.html#experiencia">ExperiÃªncia</a>
+      <a href="index.html#experiencia">Experiência</a>
       <a href="index.html#projetos">Projetos</a>
       <a href="index.html#blog">Blog</a>
       <a href="contato.html" class="active">Contato</a>
@@ -251,8 +251,8 @@
     <div class="header-actions">
       <div class="lang-switcher" aria-label="Idiomas">
         <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true" aria-label="English" title="English"><img src="images/flag-us.svg" alt="" class="flag-icon" /></button>
-        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" aria-label="EspaÃ±ol" title="EspaÃ±ol"><img src="images/flag-es.svg" alt="" class="flag-icon" /></button>
-        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false" aria-label="PortuguÃªs" title="PortuguÃªs"><img src="images/flag-br.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" aria-label="Español" title="Español"><img src="images/flag-es.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false" aria-label="Português" title="Português"><img src="images/flag-br.svg" alt="" class="flag-icon" /></button>
       </div>
 
       <div class="socials" aria-label="Redes sociais">
@@ -269,14 +269,14 @@
     </div>
   </header>
 
-  <!-- â”€â”€ PAGE HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- ── PAGE HERO ─────────────────────────────────────── -->
   <div class="page-hero">
-    <p class="ph-label">// 06 â€” Entre em contato</p>
+    <p class="ph-label">// 06 — Entre em contato</p>
     <h1 class="ph-title">Vamos<br>Con<em>versar</em></h1>
-    <p class="ph-sub">Aberto a parcerias, projetos e colaboraÃ§Ãµes tÃ©cnicas. Respondo sempre em atÃ© 24 horas.</p>
+    <p class="ph-sub">Aberto a parcerias, projetos e colaborações técnicas. Respondo sempre em até 24 horas.</p>
   </div>
 
-  <!-- â”€â”€ MAIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- ── MAIN ──────────────────────────────────────────── -->
   <div class="main-grid">
 
     <!-- INFO PANEL -->
@@ -286,8 +286,8 @@
       <div class="avail-card">
         <div class="avail-dot" aria-hidden="true"></div>
         <div class="avail-text">
-          <strong>DisponÃ­vel parcerias tÃ©cnicas e projetos</strong>
-          <span>SÃ£o Paulo, SP Â· Brasil Â· Remoto ou hÃ­brido</span>
+          <strong>Disponível parcerias técnicas e projetos</strong>
+          <span>São Paulo, SP · Brasil · Remoto ou híbrido</span>
         </div>
       </div>
 
@@ -367,10 +367,10 @@
     <!-- FORM PANEL -->
     <section class="form-panel" aria-labelledby="form-title">
       <h2 class="fp-title" id="form-title">Envie uma mensagem</h2>
-      <p class="fp-sub">Preencha o formulÃ¡rio e recebo direto no meu email. Campos marcados com <span style="color:var(--orange)">*</span> sÃ£o obrigatÃ³rios.</p>
+      <p class="fp-sub">Preencha o formulário e recebo direto no meu email. Campos marcados com <span style="color:var(--orange)">*</span> são obrigatórios.</p>
 
       <!-- Progress bar -->
-      <div class="form-progress" id="formProgress" role="progressbar" aria-label="Progresso do formulÃ¡rio">
+      <div class="form-progress" id="formProgress" role="progressbar" aria-label="Progresso do formulário">
         <div class="fp-bar" id="fpBar"></div>
       </div>
 
@@ -383,7 +383,7 @@
             <input type="text" id="f-name" name="name" placeholder="Seu nome completo" autocomplete="name" />
             <span class="ferr" id="f-name-err" role="alert">
               <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-              Nome Ã© obrigatÃ³rio
+              Nome é obrigatório
             </span>
           </div>
 
@@ -393,7 +393,7 @@
             <input type="email" id="f-email" name="email" placeholder="seu@email.com" autocomplete="email" />
             <span class="ferr" id="f-email-err" role="alert">
               <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-              Informe um email vÃ¡lido
+              Informe um email válido
             </span>
           </div>
 
@@ -405,7 +405,7 @@
 
           <!-- Empresa -->
           <div class="form-field">
-            <label for="f-company">Empresa / OrganizaÃ§Ã£o</label>
+            <label for="f-company">Empresa / Organização</label>
             <input type="text" id="f-company" name="company" placeholder="Nome da empresa (opcional)" autocomplete="organization" />
           </div>
 
@@ -413,14 +413,14 @@
           <div class="form-field full">
             <label for="f-subject">Assunto <span class="req" aria-hidden="true">*</span></label>
             <select id="f-subject" name="subject">
-              <option value="">Selecione o assuntoâ€¦</option>
-              <option value="Oportunidade de trabalho">ðŸ’¼ Oportunidade de trabalho</option>
-              <option value="Projeto freelance">ðŸš€ Projeto freelance</option>
-              <option value="Parceria tÃ©cnica">ðŸ¤ Parceria tÃ©cnica</option>
-              <option value="Consultoria">ðŸ“‹ Consultoria</option>
-              <option value="DÃºvida tÃ©cnica">ðŸ’¡ DÃºvida tÃ©cnica</option>
-              <option value="ColaboraÃ§Ã£o em blog/conteÃºdo">âœï¸ ColaboraÃ§Ã£o em blog/conteÃºdo</option>
-              <option value="Outro">ðŸ’¬ Outro</option>
+              <option value="">Selecione o assunto…</option>
+              <option value="Oportunidade de trabalho">💼 Oportunidade de trabalho</option>
+              <option value="Projeto freelance">🚀 Projeto freelance</option>
+              <option value="Parceria técnica">🤝 Parceria técnica</option>
+              <option value="Consultoria">📋 Consultoria</option>
+              <option value="Dúvida técnica">💡 Dúvida técnica</option>
+              <option value="Colaboração em blog/conteúdo">✍️ Colaboração em blog/conteúdo</option>
+              <option value="Outro">💬 Outro</option>
             </select>
             <span class="ferr" id="f-subject-err" role="alert">
               <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
@@ -431,17 +431,17 @@
           <!-- Mensagem -->
           <div class="form-field full">
             <label for="f-message">Mensagem <span class="req" aria-hidden="true">*</span></label>
-            <textarea id="f-message" name="message" placeholder="Descreva sua proposta, projeto ou dÃºvida em detalhesâ€¦" maxlength="2000"></textarea>
+            <textarea id="f-message" name="message" placeholder="Descreva sua proposta, projeto ou dúvida em detalhes…" maxlength="2000"></textarea>
             <div class="char-count" id="charCount" aria-live="polite">0 / 2000</div>
             <span class="ferr" id="f-message-err" role="alert">
               <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-              Mensagem Ã© obrigatÃ³ria (mÃ­n. 20 caracteres)
+              Mensagem é obrigatória (mín. 20 caracteres)
             </span>
           </div>
 
           <!-- Privacy -->
           <div class="privacy">
-            Ao enviar este formulÃ¡rio, vocÃª concorda que suas informaÃ§Ãµes serÃ£o usadas para responder sua mensagem. Nenhum dado Ã© compartilhado com terceiros.
+            Ao enviar este formulário, você concorda que suas informações serão usadas para responder sua mensagem. Nenhum dado é compartilhado com terceiros.
           </div>
 
           <!-- Submit -->
@@ -459,10 +459,10 @@
 
   </div>
 
-  <!-- â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- ── FOOTER ───────────────────────────────────────── -->
   <footer>
     <div class="footer-left">
-      <a href="index.html" class="logo" aria-label="InÃ­cio"><span class="logo-box">JH</span></a>
+      <a href="index.html" class="logo" aria-label="Início"><span class="logo-box">JH</span></a>
       <p><span class="footer-dot" aria-hidden="true"></span>josehenriquesa.com</p>
     </div>
 
@@ -488,7 +488,7 @@
     window.SiteEffects?.initCursor('cur');
     window.SiteEffects?.initCanvasParticles('cv', { maxAlpha: 0.4 });
 
-    /* â”€â”€ Char counter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── Char counter ────────────────────────────── */
     const msgEl    = document.getElementById('f-message');
     const charCnt  = document.getElementById('charCount');
     msgEl.addEventListener('input', () => {
@@ -497,7 +497,7 @@
       charCnt.classList.toggle('warn', n > 1800);
     });
 
-    /* â”€â”€ Form progress â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── Form progress ────────────────────────────── */
     const fields    = ['f-name','f-email','f-subject','f-message'];
     const progress  = document.getElementById('formProgress');
     const fpBar     = document.getElementById('fpBar');
@@ -509,7 +509,7 @@
     }
     document.getElementById('contactForm').addEventListener('input', updateProgress);
 
-    /* â”€â”€ Validation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── Validation ──────────────────────────────── */
     function showErr(id, msg, show){
       const el = document.getElementById(id);
       const input = document.getElementById(id.replace('-err',''));
@@ -550,7 +550,7 @@
       });
     });
 
-    /* â”€â”€ Submit â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* ── Submit ──────────────────────────────────── */
     const form      = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
     const statusEl  = document.getElementById('formStatus');
@@ -596,16 +596,16 @@
       };
 
       /*
-       * CONFIGURAÃ‡ÃƒO DE ENVIO:
-       * â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-       * OPÃ‡ÃƒO 1 â€” Formspree (recomendado para S3 estÃ¡tico):
+       * CONFIGURAÇÃO DE ENVIO:
+       * ─────────────────────────────────────────────────────────────
+       * OPÇÃO 1 — Formspree (recomendado para S3 estático):
        *   1. Acesse https://formspree.io e crie uma conta gratuita
        *   2. Crie um novo Form e copie o ID (ex: xpwzqrkb)
        *   3. Substitua 'YOUR_FORM_ID' abaixo pelo seu ID
        *
-       * OPÃ‡ÃƒO 2 â€” Se o Formspree nÃ£o estiver configurado:
+       * OPÇÃO 2 — Se o Formspree não estiver configurado:
        *   O fallback abre automaticamente o cliente de email (mailto:)
-       * â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+       * ─────────────────────────────────────────────────────────────
        */
       const FORMSPREE_ID = 'mwvrdbpy'; // Use o ID real do Formspree
       const FORMSPREE_URL = `https://formspree.io/f/${FORMSPREE_ID}`;
