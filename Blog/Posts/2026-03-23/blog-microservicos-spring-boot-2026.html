@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MicrosserviÃ§os com Spring Boot: boas prÃ¡ticas em 2026 | Jose Henrique</title>
+  <meta name="description" content="Guia prÃ¡tico sobre arquitetura, contexto, aplicaÃ§Ã£o e casos de uso de microsserviÃ§os com Spring Boot em 2026." />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
+  <meta name="theme-color" content="#FF5C00" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/header-controls.css" />
+  <link rel="stylesheet" href="/css/article.css" />
+</head>
+<body data-page="article">
+  <div id="cur" aria-hidden="true"></div>
+
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="/index.html" class="logo" aria-label="InÃ­cio">
+        <span class="logo-box">JH</span>
+      </a>
+      <nav aria-label="Menu">
+        <ul class="nav-links">
+          <li><a href="/index.html#sobre">Sobre</a></li>
+          <li><a href="/index.html#experiencia">ExperiÃªncia</a></li>
+          <li><a href="/index.html#projetos">Projetos</a></li>
+          <li><a href="/index.html#blog">Blog</a></li>
+        </ul>
+      </nav>
+
+      <a href="/contato.html" class="nav-cta">Contato <span aria-hidden="true">&#x2192;</span></a>
+      <div class="lang-switcher" aria-label="Idiomas">
+        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true" aria-label="English" title="English"><img src="/images/flag-us.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" aria-label="EspaÃ±ol" title="EspaÃ±ol"><img src="/images/flag-es.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false" aria-label="PortuguÃªs" title="PortuguÃªs"><img src="/images/flag-br.svg" alt="" class="flag-icon" /></button>
+      </div>
+      <div class="nav-socials" aria-label="Redes sociais">
+        <a href="https://www.linkedin.com/in/jose-henrique-dev-java/" target="_blank" rel="noopener" class="nav-soc" aria-label="LinkedIn">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/jhenrique" target="_blank" rel="noopener" class="nav-soc" aria-label="GitHub">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/jhenrique_sa/" target="_blank" rel="noopener" class="nav-soc" aria-label="Instagram">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mob-overlay" id="mobMenu">
+    <button class="mob-close" id="mobClose" aria-label="Fechar menu">&#x2715;</button>
+    <nav><ul>
+      <li><a href="/index.html#sobre" class="mob-link">Sobre</a></li>
+      <li><a href="/index.html#experiencia" class="mob-link">ExperiÃªncia</a></li>
+      <li><a href="/index.html#projetos" class="mob-link">Projetos</a></li>
+      <li><a href="/index.html#blog" class="mob-link">Blog</a></li>
+      <li><a href="/contato.html" class="mob-link">Contato</a></li>
+    </ul></nav>
+  </div>
+
+  <main class="article-main">
+    <article class="article-shell">
+      <p class="article-label ri">Java Â· Backend</p>
+      <h1 class="article-title ri">MicrosserviÃ§os com Spring Boot: boas prÃ¡ticas em 2026</h1>
+      <p class="article-sub ri">Como organizar arquitetura, operaÃ§Ã£o e evoluÃ§Ã£o contÃ­nua de microsserviÃ§os em ambientes cloud, com foco em resiliÃªncia, observabilidade e escala.</p>
+
+      <div class="article-meta ri">
+        <span>Publicado em 23 de marÃ§o de 2026</span>
+        <span>Autor: Jose Henrique Santos Andrade</span>
+        <span>Texto gerado por IA e revisado por um humano.</span>
+      </div>
+
+      <div class="article-content">
+        <h2 class="ri">Contexto</h2>
+        <p class="ri">Em 2026, microsserviÃ§os jÃ¡ nÃ£o sÃ£o apenas uma decisÃ£o tÃ©cnica: sÃ£o uma decisÃ£o de organizaÃ§Ã£o. Times que precisam evoluir produtos com ciclos curtos, mÃºltiplas integraÃ§Ãµes e diferentes ritmos de entrega se beneficiam de serviÃ§os independentes, com ownership claro e fronteiras de domÃ­nio bem definidas.</p>
+        <p class="ri">Com Spring Boot, o ganho estÃ¡ em produtividade com padrÃ£o corporativo: inicializaÃ§Ã£o rÃ¡pida, integraÃ§Ã£o com ecossistema Spring e estrutura consistente para APIs, mensageria, seguranÃ§a e telemetria.</p>
+
+        <h2 class="ri">AplicaÃ§Ã£o prÃ¡tica</h2>
+        <p class="ri">A base de uma arquitetura saudÃ¡vel comeÃ§a pelo desenho de domÃ­nio. Antes de criar serviÃ§os, vale mapear capacidades de negÃ³cio e responsabilidades, evitando microserviÃ§os â€œfinos demaisâ€ que sÃ³ geram acoplamento distribuÃ­do. Um serviÃ§o bem definido deve ter dados prÃ³prios, contratos claros e autonomia de deploy.</p>
+        <p class="ri">No runtime, trÃªs pilares sustentam a operaÃ§Ã£o: observabilidade, tolerÃ¢ncia a falhas e automaÃ§Ã£o. Isso inclui logs estruturados, mÃ©tricas, tracing distribuÃ­do, circuit breaker, timeout, retry com backoff e pipelines de build/deploy com testes automatizados desde a camada unitÃ¡ria atÃ© contratos.</p>
+
+        <h2 class="ri">Boas prÃ¡ticas essenciais</h2>
+        <ul class="ri">
+          <li>Modelar contratos por versÃ£o e governar compatibilidade para evitar quebra entre consumidores.</li>
+          <li>Usar banco por serviÃ§o quando possÃ­vel, reduzindo acoplamento de dados e dependÃªncia cruzada.</li>
+          <li>Padronizar telemetria desde o primeiro dia para facilitar anÃ¡lise de incidentes e tuning de performance.</li>
+          <li>Aplicar seguranÃ§a em profundidade: autenticaÃ§Ã£o forte, autorizaÃ§Ã£o por escopo e gestÃ£o de segredos.</li>
+          <li>Evitar transaÃ§Ãµes distribuÃ­das longas, preferindo eventos e consistÃªncia eventual quando necessÃ¡rio.</li>
+        </ul>
+
+        <h2 class="ri">Casos de uso</h2>
+        <p class="ri">No e-commerce, separar catÃ¡logo, checkout, pagamento e antifraude permite escalar cada fluxo de forma independente em perÃ­odos de pico. Em fintech, microsserviÃ§os ajudam a isolar trilhas crÃ­ticas de conciliaÃ§Ã£o, liquidaÃ§Ã£o e risco. Em telecom, facilitam evoluÃ§Ã£o de jornadas digitais sem travar sistemas legados.</p>
+        <p class="ri">Quando combinados com Kubernetes e boas prÃ¡ticas de engenharia de plataforma, microsserviÃ§os com Spring Boot entregam velocidade com governanÃ§a, mantendo equilÃ­brio entre autonomia dos times e consistÃªncia operacional.</p>
+
+        <div class="article-actions ri">
+          <a href="/index.html#blog" class="btn-ghost">Voltar para o Blog</a>
+          <a href="/contato.html" class="btn-fill">Falar comigo <span aria-hidden="true">&#x2192;</span></a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="/index.html" class="logo"><span class="logo-box">JH</span></a>
+      <p>&#169; 2026 Jose Henrique Santos Andrade Â· josehenriquesa.com</p>
+      <div class="footer-links">
+        <a href="mailto:henrique.lavras@gmail.com" aria-label="Email">Email</a>
+        <a href="https://www.linkedin.com/in/jose-henrique-dev-java/" target="_blank" rel="noopener" class="footer-soc" aria-label="LinkedIn">
+          <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/jhenrique" target="_blank" rel="noopener" class="footer-soc" aria-label="GitHub">
+          <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/jhenrique_sa/" target="_blank" rel="noopener" class="footer-soc" aria-label="Instagram">
+          <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/site-effects.js" defer></script>
+  <script src="/js/main.js" defer></script>
+  <script src="/js/i18n.js" defer></script>
+</body>
+</html>
+
