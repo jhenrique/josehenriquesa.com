@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body data-page="home">
 
   <!-- CURSOR -->
   <div id="cur" aria-hidden="true"></div>
@@ -34,7 +34,12 @@
           <li><a href="#blog">Blog</a></li>
         </ul>
       </nav>
-      <a href="contato.html" class="nav-cta">Contato <span aria-hidden="true">&#x2192;</span></a>
+      <a href="contato.html" class="nav-cta">Contact <span aria-hidden="true">&#x2192;</span></a>
+      <div class="lang-switcher" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">🇺🇸</button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">🇪🇸</button>
+        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">🇧🇷</button>
+      </div>
       <div class="nav-socials" aria-label="Redes sociais">
         <a href="https://www.linkedin.com/in/jose-henrique-dev-java/" target="_blank" rel="noopener" class="nav-soc" aria-label="LinkedIn">
           <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
@@ -54,7 +59,7 @@
 
   <!-- MOBILE OVERLAY -->
   <div class="mob-overlay" id="mobMenu">
-    <button class="mob-close" id="mobClose" aria-label="Fechar">&#x2715;</button>
+    <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
     <nav><ul>
       <li><a href="#sobre" class="mob-link">Sobre</a></li>
       <li><a href="#experiencia" class="mob-link">Experiência</a></li>
@@ -517,7 +522,7 @@
               <span class="ci-value">+55 (11) 97235-4529 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
             </a>
             <a href="mailto:henrique.lavras@gmail.com" class="btn-fill" style="margin-top:32px;display:inline-flex;width:fit-content">
-              Enviar mensagem &#x2192;
+              Send message &#x2192;
             </a>
           </div>
         </div>
@@ -547,5 +552,6 @@
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script src="js/i18n.js" defer></script>
 </body>
 </html>
