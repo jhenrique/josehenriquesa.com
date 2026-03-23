@@ -12,7 +12,11 @@
     en: {
       ui: {
         langLabel: 'Language',
+<<<<<<< ours
         languages: { en: 'EN', es: 'ES', pt: 'PT' }
+=======
+        languages: { en: 'English', es: 'Español', pt: 'Português' }
+>>>>>>> theirs
       },
       home: {
         title: 'Jose Henrique — Senior Java Developer',
@@ -146,7 +150,11 @@
       }
     },
     es: {
+<<<<<<< ours
       ui: { langLabel: 'Idioma', languages: { en: 'EN', es: 'ES', pt: 'PT' } },
+=======
+      ui: { langLabel: 'Idioma', languages: { en: 'English', es: 'Español', pt: 'Português' } },
+>>>>>>> theirs
       home: {
         title: 'Jose Henrique — Desarrollador Java Senior',
         description: 'Jose Henrique Santos Andrade — Desarrollador Java Senior y Arquitecto Backend con más de 14 años de experiencia.',
@@ -176,7 +184,11 @@
       }
     },
     pt: {
+<<<<<<< ours
       ui: { langLabel: 'Idioma', languages: { en: 'EN', es: 'ES', pt: 'PT' } },
+=======
+      ui: { langLabel: 'Idioma', languages: { en: 'English', es: 'Español', pt: 'Português' } },
+>>>>>>> theirs
       home: {
         title: 'Jose Henrique — Java Sênior', description: 'Jose Henrique Santos Andrade — Desenvolvedor Java Sênior & Arquiteto Backend com 14+ anos de experiência.', nav: ['Sobre', 'Experiência', 'Projetos', 'Blog'], cta: 'Contato', closeMenu: 'Fechar menu', burgerMenu: 'Menu', heroEyebrow: '● Disponível para parcerias técnicas e projetos', heroName: 'Meu nome<br>é Jose<br><span class="stroke-text">Henrique</span>', heroBio: 'Desenvolvedor Java Sênior &amp; Arquiteto Backend com <strong>14+ anos</strong> de experiência construindo microsserviços, plataformas de e-commerce enterprise e sistemas de alta performance para <strong>Vivo / Telefônica Brasil</strong>.', heroBadgesAria: 'Principais tecnologias', heroButtons: ['Ver projetos', 'Falar comigo'], statChipAria: '14 anos de experiência', statChipSub: 'anos de<br>experiência', location: 'São Paulo · BR', stripLabels: ['Anos de experiência', 'Anos na Vivo', 'Empresas', 'Pós-graduações'], aboutLabel: '// 01 — Sobre', aboutTitle: 'Quem <br><span class="stroke-text">sou eu</span>', aboutParagraphs: ['Bacharel em <strong>Sistemas de Informação pela UFLA</strong>, especialista em Arquitetura de Software, e cursando pós-graduação em <strong>Inteligência Artificial pela Anhembi Morumbi</strong>.', 'Atuando como Consultor e Desenvolvedor na <strong>Vivo (Telefônica Brasil)</strong> desde 2019, entrego soluções digitais de alta escala usando SAP Commerce, Kubernetes, Docker e AWS. Yellow Belt em Lean, com profundo domínio em Scrum e Kanban.'], education: [['Bacharelado — Sistemas de Informação', 'UFLA · 2008 – 2012'], ['Especialização — Arquitetura de Software', 'IGTI · 2014 – 2015'], ['Especialização — Inteligência Artificial', 'Anhembi Morumbi · 2025 – 2026 <span class="tag-active">Em curso</span>']], contactMe: 'Entrar em contato', experienceLabel: '// 02 — Carreira', experienceTitle: 'Experiência <span class="stroke-text">Profissional</span>', currentBadge: 'Atual', jobs: [['Consultor &amp; Desenvolvedor', 'Vivo · Telefônica Brasil · São Paulo', 'Ago 2019 – Presente · 6a 8m', 'Desenvolvimento e arquitetura de produtos digitais com SAP Commerce (Hybris), Spring MVC, Node.js, Docker e Kubernetes. Ciclo completo: arquitetura, integrações, desenvolvimento, implantação e evolução contínua. Migração para SAP Cloud.'], ['Líder Técnico &amp; Dev Sênior', 'Equals · Gestão Financeira · Lavras, MG', 'Mai 2017 – Ago 2019 · 2a 4m', 'Liderança de equipe de integrações com meios de pagamento. Arquitetura, desenvolvimento e modelagem de banco de dados Oracle. Suporte interno e externo a parceiros e clientes.'], ['Analista &amp; Desenvolvedor Pleno', 'Equals · Gestão Financeira · São Paulo', 'Set 2014 – Mai 2017 · 2a 9m', 'Análise e desenvolvimento com Java, Spring Framework e Apache Camel. Levantamento de requisitos, treinamentos e modelagem Oracle. Servidor JBoss.'], ['Analista de Sistemas', 'LEMAF · Lab. Manejo Florestal · UFLA', 'Mai 2012 – Ago 2014 · 2a 4m', 'Desenvolvimento de sistemas florestais e ambientais, levantamento de requisitos, modelagem de banco de dados e implantação. Início como estagiário.'], ['Desenvolvedor Full Stack', 'LabGTI · Lavras, MG', 'Abr 2011 – Jan 2012 · 10m', 'Desenvolvimento de sistemas com Java, JavaScript, jQuery e Bootstrap.'], ['Instrutor &amp; WebMaster', 'Lab. Geoprocessamento · UFLA · Lavras', 'Mai 2010 – Jul 2011 · 1a 3m', 'Cursos de geoprocessamento para técnicos e administração de site Joomla.']], stackLabel: '// 03 — Stack', stackTitle: 'Minhas <span class="stroke-text">Tecnologias</span>', stackCats: ['Backend', 'Cloud &amp; DevOps', 'Banco de Dados'], skillLevels: ['Expert', 'Expert', 'Expert', 'Avançado', 'Avançado', 'Expert', 'Avançado', 'Avançado', 'Avançado', 'Avançado', 'Expert', 'Avançado', 'Expert', 'Avançado', 'Expert', 'Avançado', 'Avançado', 'Avançado'], projectLabel: '// 04 — Portfolio', projectTitle: 'Projetos em <span class="stroke-text">Destaque</span>', allProjects: 'Ver todos', projects: [['E-commerce · SAP', 'Plataforma Digital Vivo', 'E-commerce enterprise com SAP Commerce (Hybris), microsserviços, Kubernetes e SAP Cloud. Módulos de checkout, catálogo e APIs críticas de negócio.'], ['Fintech', 'Hub de Pagamentos', 'Hub centralizado para integrações com meios de pagamento. Alta disponibilidade e rastreabilidade de transações.'], ['Ambiental · GIS', 'Gestão Florestal', 'Sistema de monitoramento florestal e ambiental com geoprocessamento para órgãos governamentais.']], blogLabel: '// 05 — Blog', blogTitle: 'Artigos &amp; <span class="stroke-text">Conteúdo</span>', blogPosts: [['Java · Backend', 'Microsserviços com Spring Boot: boas práticas em 2026', 'Como estruturar projetos Spring Boot modernos com resiliência, observabilidade e performance em Kubernetes.', 'Ler artigo'], ['SAP Commerce', 'SAP Commerce Cloud: o que você precisa saber antes de migrar', 'Guia prático sobre migração de Hybris on-premise para SAP Cloud — desafios e estratégias de sucesso.', 'Ler artigo'], ['IA · Tecnologia', 'IA no desenvolvimento backend: o futuro já chegou', 'Como a Inteligência Artificial está transformando o desenvolvimento, testes e documentação em Java.', 'Ler artigo']], contactLabel: '// 06 — Contato', contactTitle: 'Vamos<br><span class="stroke-text">Conversar</span>', contactText: 'Aberto a oportunidades, projetos e colaborações. Respondo em até 24h.', contactLocation: 'São Paulo, SP · Brasil', sendMessage: 'Enviar mensagem →', footerEmail: 'Email'
       },
@@ -255,7 +267,13 @@
       const active = btn.dataset.lang === lang;
       btn.classList.toggle('active', active);
       btn.setAttribute('aria-pressed', String(active));
+<<<<<<< ours
       btn.setAttribute('title', dict[lang].ui.languages[btn.dataset.lang]);
+=======
+      const label = dict[lang].ui.languages[btn.dataset.lang];
+      btn.setAttribute('title', label);
+      btn.setAttribute('aria-label', label);
+>>>>>>> theirs
     });
   }
 

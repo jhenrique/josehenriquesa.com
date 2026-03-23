@@ -60,6 +60,14 @@
     .lang-btn{border:none;background:transparent;color:var(--muted);font-family:var(--fM);font-size:11px;letter-spacing:.08em;padding:8px 10px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
     .lang-btn:hover,.lang-btn.active{background:rgba(255,92,0,.15);color:var(--orange)}
 
+    .lang-btn{border:none;background:transparent;color:var(--muted);padding:6px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s,transform .2s}.flag-icon{display:block;width:24px;height:18px;border-radius:4px;box-shadow:0 0 0 1px rgba(255,255,255,.08)}
+    .lang-btn:hover,.lang-btn.active{background:rgba(255,92,0,.15);color:var(--orange);transform:translateY(-1px)}
+
+    .lang-btn{border:none;background:transparent;color:var(--muted);padding:6px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+    .flag-icon{display:block;width:24px;height:18px;border-radius:4px;box-shadow:0 0 0 1px rgba(255,255,255,.08)}
+    .lang-btn:hover,.lang-btn.active{background:rgba(255,92,0,.15);color:var(--orange);transform:translateY(-1px)}
+
+
     /* ── PAGE HERO ──────────────────────────────────── */
     .page-hero{position:relative;z-index:1;padding:100px 56px 64px;max-width:1200px;margin:0 auto;width:100%}
     .ph-label{font-family:var(--fM);font-size:11px;color:var(--orange);letter-spacing:.22em;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px;opacity:0;animation:up .8s var(--ease) .1s forwards}
@@ -214,7 +222,9 @@
       header{padding:16px 24px}
       .header-center{display:none}
       .header-actions{width:100%;justify-content:flex-end}
-      .lang-btn{padding:7px 9px}
+      .lang-btn{padding:5px}
+      .flag-icon{width:22px;height:16px}
+
       .page-hero{padding:70px 24px 48px}
       .main-grid{padding:0 24px 80px}
       .form-panel{padding:32px 24px}
@@ -251,13 +261,14 @@
     </nav>
 
     <div class="header-actions">
-      <div class="lang-switcher" aria-label="Language">
-        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
-        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+      <div class="lang-switcher" aria-label="Idiomas">
+        <button type="button" class="lang-btn active" aria-pressed="true" aria-label="English" title="English"><img src="images/flag-us.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" aria-pressed="false" aria-label="Español" title="Español"><img src="images/flag-es.svg" alt="" class="flag-icon" /></button>
+        <button type="button" class="lang-btn" aria-pressed="false" aria-label="Português" title="Português"><img src="images/flag-br.svg" alt="" class="flag-icon" /></button>
       </div>
 
-      <div class="socials" aria-label="Social media">
+      <div class="socials" aria-label="Redes sociais">
+
       <a href="https://www.linkedin.com/in/jose-henrique-dev-java/" target="_blank" rel="noopener" class="soc-link" aria-label="LinkedIn">
         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
       </a>
