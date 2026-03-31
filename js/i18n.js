@@ -135,7 +135,7 @@
         quickLinks: ['→ About', '→ Experience', '→ Projects', '→ Blog', '→ Contact'],
         contactLabel: '// Let’s talk',
         contactTitle: 'Get in<br><em>Touch</em>',
-        contactDesc: 'Found this error but still have something important to say? Send me a message — I always reply within 24 hours.',
+        contactDesc: 'Found this error but still have something important to say? Send me a message ? I always reply within 24 hours.',
         formLabels: { name: 'Name', email: 'Email', subject: 'Subject', message: 'Message' },
         formPlaceholders: { name: 'Your name', email: 'your@email.com', message: 'Describe your idea or proposal…' },
         formOptions: ['Select a subject…', 'Job opportunity', 'Freelance project', 'Technical partnership', 'Technical question', 'Other'],
