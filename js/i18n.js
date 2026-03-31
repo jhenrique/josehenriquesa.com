@@ -68,10 +68,10 @@
         blogLabel: '// 05 — Blog',
         blogTitle: 'Articles &amp; <span class="stroke-text">Content</span>',
         blogPosts: [
-          ['Java ?? Backend', 'Microservices with Spring Boot: best practices in 2026', 'How to structure modern Spring Boot projects with resilience, observability, and performance on Kubernetes.', 'Read article'],
-          ['SAP Commerce', 'SAP Commerce Cloud: what you need to know before migrating', 'A practical guide to moving from on-premise Hybris to SAP Cloud ??? challenges and winning strategies.', 'Read article'],
-          ['AI ?? Technology', 'AI in backend development: the future is already here', 'How Artificial Intelligence is transforming Java development, testing, and documentation.', 'Read article'],
-          ['Java ?? Architecture', 'Spring Boot vs Quarkus: which framework should you use for microservices?', 'A practical comparison of startup, scaling, integration, and real architecture scenarios.', 'Read article']
+          ['Java - Backend', 'Microservices with Spring Boot: best practices in 2026', 'How to structure modern Spring Boot projects with resilience, observability, and performance on Kubernetes.', 'Read article'],
+          ['SAP Commerce', 'SAP Commerce Cloud: what you need to know before migrating', 'A practical guide to moving from on-premise Hybris to SAP Cloud - challenges and winning strategies.', 'Read article'],
+          ['AI - Technology', 'AI in backend development: the future is already here', 'How Artificial Intelligence is transforming Java development, testing, and documentation.', 'Read article'],
+          ['Java - Architecture', 'Spring Boot vs Quarkus: which framework should you use for microservices?', 'A practical comparison of startup, scaling, integration, and real architecture scenarios.', 'Read article']
         ],
         contactLabel: '// 06 — Contact',
         contactTitle: 'Let’s<br><span class="stroke-text">Talk</span>',
@@ -167,10 +167,10 @@
         stackLabel: '// 03 — Stack', stackTitle: 'Mis <span class="stroke-text">Tecnologías</span>', stackCats: ['Backend', 'Cloud &amp; DevOps', 'Bases de datos'], skillLevels: ['Experto', 'Experto', 'Experto', 'Avanzado', 'Avanzado', 'Experto', 'Avanzado', 'Avanzado', 'Avanzado', 'Avanzado', 'Experto', 'Avanzado', 'Experto', 'Avanzado', 'Experto', 'Avanzado', 'Avanzado', 'Avanzado'],
         projectLabel: '// 04 — Portafolio', projectTitle: 'Proyectos <span class="stroke-text">Destacados</span>', allProjects: 'Ver todos', projects: [['E-commerce · SAP', 'Plataforma Digital Vivo', 'E-commerce enterprise con SAP Commerce (Hybris), microservicios, Kubernetes y SAP Cloud. Módulos de checkout, catálogo y APIs críticas del negocio.'], ['Fintech', 'Hub de Pagos', 'Hub centralizado para integraciones con medios de pago. Alta disponibilidad y trazabilidad completa de transacciones.'], ['Ambiental · GIS', 'Gestión Forestal', 'Sistema de monitoreo forestal y ambiental con geoprocesamiento para organismos gubernamentales.']],
         blogLabel: '// 05 — Blog', blogTitle: 'Artículos y <span class="stroke-text">Contenido</span>', blogPosts: [
-          ['Java ?? Backend', 'Microservicios con Spring Boot: buenas pr??cticas en 2026', 'C??mo estructurar proyectos modernos con Spring Boot, resiliencia, observabilidad y rendimiento en Kubernetes.', 'Leer art??culo'],
-          ['SAP Commerce', 'SAP Commerce Cloud: lo que necesitas saber antes de migrar', 'Gu??a pr??ctica sobre la migraci??n de Hybris on-premise a SAP Cloud: desaf??os y estrategias de ??xito.', 'Leer art??culo'],
-          ['IA ?? Tecnolog??a', 'IA en el desarrollo backend: el futuro ya lleg??', 'C??mo la Inteligencia Artificial est?? transformando el desarrollo, las pruebas y la documentaci??n en Java.', 'Leer art??culo'],
-          ['Java ?? Arquitectura', 'Spring Boot vs Quarkus: ??qu?? framework usar en microservicios?', 'Comparaci??n pr??ctica de inicializaci??n, escala, integraci??n y escenarios reales de arquitectura.', 'Leer art??culo']
+          ['Java - Backend', 'Microservicios con Spring Boot: buenas practicas en 2026', 'Como estructurar proyectos modernos con Spring Boot, resiliencia, observabilidad y rendimiento en Kubernetes.', 'Leer articulo'],
+          ['SAP Commerce', 'SAP Commerce Cloud: lo que necesitas saber antes de migrar', 'Guia practica sobre la migracion de Hybris on-premise a SAP Cloud: desafios y estrategias de exito.', 'Leer articulo'],
+          ['IA - Tecnologia', 'IA en el desarrollo backend: el futuro ya llego', 'Como la Inteligencia Artificial esta transformando el desarrollo, las pruebas y la documentacion en Java.', 'Leer articulo'],
+          ['Java - Arquitectura', 'Spring Boot vs Quarkus: que framework usar en microservicios?', 'Comparacion practica de inicializacion, escala, integracion y escenarios reales de arquitectura.', 'Leer articulo']
         ],
         contactLabel: '// 06 — Contacto', contactTitle: 'Vamos a<br><span class="stroke-text">Conversar</span>', contactText: 'Abierto a oportunidades, proyectos y colaboraciones. Respondo en hasta 24 horas.', contactLocation: 'São Paulo, SP · Brasil', sendMessage: 'Enviar mensaje →', footerEmail: 'Email'
       },
@@ -185,10 +185,10 @@
       ui: { langLabel: 'Idioma', languages: { en: 'English', es: 'Español', pt: 'Português' } },
       home: {
         title: 'Jose Henrique — Java Sênior', description: 'Jose Henrique Santos Andrade — Desenvolvedor Java Sênior & Arquiteto Backend com 14+ anos de experiência.', nav: ['Sobre', 'Experiência', 'Projetos', 'Blog'], cta: 'Contato', closeMenu: 'Fechar menu', burgerMenu: 'Menu', heroEyebrow: '● Disponível para parcerias técnicas e projetos', heroName: 'Meu nome<br>é Jose<br><span class="stroke-text">Henrique</span>', heroBio: 'Desenvolvedor Java Sênior &amp; Arquiteto Backend com <strong>14+ anos</strong> de experiência construindo microsserviços, plataformas de e-commerce enterprise e sistemas de alta performance para <strong>Vivo / Telefônica Brasil</strong>.', heroBadgesAria: 'Principais tecnologias', heroButtons: ['Ver projetos', 'Falar comigo'], statChipAria: '14 anos de experiência', statChipSub: 'anos de<br>experiência', location: 'São Paulo · BR', stripLabels: ['Anos de experiência', 'Anos na Vivo', 'Empresas', 'Pós-graduações'], aboutLabel: '// 01 — Sobre', aboutTitle: 'Quem <br><span class="stroke-text">sou eu</span>', aboutParagraphs: ['Bacharel em <strong>Sistemas de Informação pela UFLA</strong>, especialista em Arquitetura de Software, e cursando pós-graduação em <strong>Inteligência Artificial pela Anhembi Morumbi</strong>.', 'Atuando como Consultor e Desenvolvedor na <strong>Vivo (Telefônica Brasil)</strong> desde 2019, entrego soluções digitais de alta escala usando SAP Commerce, Kubernetes, Docker e AWS. Yellow Belt em Lean, com profundo domínio em Scrum e Kanban.'], education: [['Bacharelado — Sistemas de Informação', 'UFLA · 2008 – 2012'], ['Especialização — Arquitetura de Software', 'IGTI · 2014 – 2015'], ['Especialização — Inteligência Artificial', 'Anhembi Morumbi · 2025 – 2026 <span class="tag-active">Em curso</span>']], contactMe: 'Entrar em contato', experienceLabel: '// 02 — Carreira', experienceTitle: 'Experiência <span class="stroke-text">Profissional</span>', currentBadge: 'Atual', jobs: [['Consultor &amp; Desenvolvedor', 'Vivo · Telefônica Brasil · São Paulo', 'Ago 2019 – Presente · 6a 8m', 'Desenvolvimento e arquitetura de produtos digitais com SAP Commerce (Hybris), Spring MVC, Node.js, Docker e Kubernetes. Ciclo completo: arquitetura, integrações, desenvolvimento, implantação e evolução contínua. Migração para SAP Cloud.'], ['Líder Técnico &amp; Dev Sênior', 'Equals · Gestão Financeira · Lavras, MG', 'Mai 2017 – Ago 2019 · 2a 4m', 'Liderança de equipe de integrações com meios de pagamento. Arquitetura, desenvolvimento e modelagem de banco de dados Oracle. Suporte interno e externo a parceiros e clientes.'], ['Analista &amp; Desenvolvedor Pleno', 'Equals · Gestão Financeira · São Paulo', 'Set 2014 – Mai 2017 · 2a 9m', 'Análise e desenvolvimento com Java, Spring Framework e Apache Camel. Levantamento de requisitos, treinamentos e modelagem Oracle. Servidor JBoss.'], ['Analista de Sistemas', 'LEMAF · Lab. Manejo Florestal · UFLA', 'Mai 2012 – Ago 2014 · 2a 4m', 'Desenvolvimento de sistemas florestais e ambientais, levantamento de requisitos, modelagem de banco de dados e implantação. Início como estagiário.'], ['Desenvolvedor Full Stack', 'LabGTI · Lavras, MG', 'Abr 2011 – Jan 2012 · 10m', 'Desenvolvimento de sistemas com Java, JavaScript, jQuery e Bootstrap.'], ['Instrutor &amp; WebMaster', 'Lab. Geoprocessamento · UFLA · Lavras', 'Mai 2010 – Jul 2011 · 1a 3m', 'Cursos de geoprocessamento para técnicos e administração de site Joomla.']], stackLabel: '// 03 — Stack', stackTitle: 'Minhas <span class="stroke-text">Tecnologias</span>', stackCats: ['Backend', 'Cloud &amp; DevOps', 'Banco de Dados'], skillLevels: ['Expert', 'Expert', 'Expert', 'Avançado', 'Avançado', 'Expert', 'Avançado', 'Avançado', 'Avançado', 'Avançado', 'Expert', 'Avançado', 'Expert', 'Avançado', 'Expert', 'Avançado', 'Avançado', 'Avançado'], projectLabel: '// 04 — Portfolio', projectTitle: 'Projetos em <span class="stroke-text">Destaque</span>', allProjects: 'Ver todos', projects: [['E-commerce · SAP', 'Plataforma Digital Vivo', 'E-commerce enterprise com SAP Commerce (Hybris), microsserviços, Kubernetes e SAP Cloud. Módulos de checkout, catálogo e APIs críticas de negócio.'], ['Fintech', 'Hub de Pagamentos', 'Hub centralizado para integrações com meios de pagamento. Alta disponibilidade e rastreabilidade de transações.'], ['Ambiental · GIS', 'Gestão Florestal', 'Sistema de monitoramento florestal e ambiental com geoprocessamento para órgãos governamentais.']], blogLabel: '// 05 — Blog', blogTitle: 'Artigos &amp; <span class="stroke-text">Conteúdo</span>', blogPosts: [
-          ['Java ?? Backend', 'Microsservi??os com Spring Boot: boas pr??ticas em 2026', 'Como estruturar projetos Spring Boot modernos com resili??ncia, observabilidade e performance em Kubernetes.', 'Ler artigo'],
-          ['SAP Commerce', 'SAP Commerce Cloud: o que voc?? precisa saber antes de migrar', 'Guia pr??tico sobre migra????o de Hybris on-premise para SAP Cloud ??? desafios e estrat??gias de sucesso.', 'Ler artigo'],
-          ['IA ?? Tecnologia', 'IA no desenvolvimento backend: o futuro j?? chegou', 'Como a Intelig??ncia Artificial est?? transformando o desenvolvimento, testes e documenta????o em Java.', 'Ler artigo'],
-          ['Java ?? Arquitetura', 'Spring Boot vs Quarkus: qual framework usar em microsservi??os?', 'Comparativo pr??tico entre inicializa????o, escala, integra????o e cen??rios reais para arquitetura backend.', 'Ler artigo']
+          ['Java - Backend', 'Microsservicos com Spring Boot: boas praticas em 2026', 'Como estruturar projetos Spring Boot modernos com resiliencia, observabilidade e performance em Kubernetes.', 'Ler artigo'],
+          ['SAP Commerce', 'SAP Commerce Cloud: o que voce precisa saber antes de migrar', 'Guia pratico sobre migracao de Hybris on-premise para SAP Cloud - desafios e estrategias de sucesso.', 'Ler artigo'],
+          ['IA - Tecnologia', 'IA no desenvolvimento backend: o futuro ja chegou', 'Como a Inteligencia Artificial esta transformando o desenvolvimento, testes e documentacao em Java.', 'Ler artigo'],
+          ['Java - Arquitetura', 'Spring Boot vs Quarkus: qual framework usar em microsservicos?', 'Comparativo pratico entre inicializacao, escala, integracao e cenarios reais para arquitetura backend.', 'Ler artigo']
         ],
         contactLabel: '// 06 — Contato', contactTitle: 'Vamos<br><span class="stroke-text">Conversar</span>', contactText: 'Aberto a oportunidades, projetos e colaborações. Respondo em até 24h.', contactLocation: 'São Paulo, SP · Brasil', sendMessage: 'Enviar mensagem →', footerEmail: 'Email'
       },
@@ -404,26 +404,26 @@
         }
 ,
         'blog-spring-boot-vs-quarkus-microservicos.html': {
-          title: 'Spring Boot vs Quarkus en microservicios: comparaci??n pr??ctica',
-          description: 'Comparaci??n pr??ctica entre Spring Boot y Quarkus en arquitecturas de microservicios: inicio, escala, integraci??n y casos reales.',
-          category: 'Java ? Arquitectura',
-          subtitle: 'Un an??lisis objetivo sobre inicio, escala, integraci??n y escenarios reales para elegir el framework correcto.',
+          title: 'Spring Boot vs Quarkus en microservicios: comparacion practica',
+          description: 'Comparacion practica entre Spring Boot y Quarkus en arquitecturas de microservicios: inicio, escala, integracion y casos reales.',
+          category: 'Java - Arquitectura',
+          subtitle: 'Un analisis objetivo sobre inicio, escala, integracion y escenarios reales para elegir el framework correcto.',
           date: '30 de marzo de 2026',
-          headings: ['Contexto', 'Inicializaci??n y escala', 'Integraci??n y productividad', 'Casos reales en microservicios'],
+          headings: ['Contexto', 'Inicializacion y escala', 'Integracion y productividad', 'Casos reales en microservicios'],
           paragraphs: [
             'Spring Boot y Quarkus son opciones maduras para backend Java moderno, pero priorizan objetivos distintos. Spring Boot destaca por ecosistema y productividad enterprise, mientras Quarkus prioriza eficiencia cloud-native.',
-            'En microservicios, la elecci??n debe considerar perfil de carga, presupuesto operativo, experiencia del equipo y estrategia de evoluci??n de plataforma.',
-            'En tiempo de arranque, Quarkus suele sobresalir, especialmente con nativo, favoreciendo escenarios con autoescalado agresivo y servicios ef??meros.',
-            'Spring Boot mantiene excelente consistencia en servicios transaccionales de larga ejecuci??n, con buen comportamiento en Kubernetes cuando hay tuning adecuado.',
-            'En entornos corporativos con mucho legado, Spring Boot normalmente reduce fricci??n de entrega por su ecosistema consolidado.',
-            'En plataformas de alta densidad, Quarkus puede mejorar eficiencia de recursos. Muchas empresas adoptan estrategia h??brida seg??n dominio de negocio y perfil de carga.'
+            'En microservicios, la eleccion debe considerar perfil de carga, presupuesto operativo, experiencia del equipo y estrategia de evolucion de plataforma.',
+            'En tiempo de arranque, Quarkus suele sobresalir, especialmente con nativo, favoreciendo escenarios con autoescalado agresivo y servicios efimeros.',
+            'Spring Boot mantiene excelente consistencia en servicios transaccionales de larga ejecucion, con buen comportamiento en Kubernetes cuando hay tuning adecuado.',
+            'En entornos corporativos con mucho legado, Spring Boot normalmente reduce friccion de entrega por su ecosistema consolidado.',
+            'En plataformas de alta densidad, Quarkus puede mejorar eficiencia de recursos. Muchas empresas adoptan estrategia hibrida segun dominio de negocio y perfil de carga.'
           ],
           bullets: [
-            'Comparar cold start y memoria con benchmarks cercanos a producci??n.',
-            'Evaluar esfuerzo de integraci??n con seguridad, datos, mensajer??a y observabilidad.',
-            'Considerar madurez del equipo y est??ndares existentes.',
-            'Medir costo total de operaci??n, no solo m??tricas aisladas.',
-            'Mantener gobernanza consistente de contratos, pruebas y telemetr??a en ambos frameworks.'
+            'Comparar cold start y memoria con benchmarks cercanos a produccion.',
+            'Evaluar esfuerzo de integracion con seguridad, datos, mensajeria y observabilidad.',
+            'Considerar madurez del equipo y estandares existentes.',
+            'Medir costo total de operacion, no solo metricas aisladas.',
+            'Mantener gobernanza consistente de contratos, pruebas y telemetria en ambos frameworks.'
           ]
         }
       }
@@ -517,26 +517,26 @@
         }
 ,
         'blog-spring-boot-vs-quarkus-microservicos.html': {
-          title: 'Spring Boot vs Quarkus em microsservi??os: compara????o pr??tica',
-          description: 'Comparativo pr??tico entre Spring Boot e Quarkus em arquiteturas de microsservi??os: inicializa????o, escala, integra????o e casos reais.',
-          category: 'Java ? Arquitetura',
-          subtitle: 'Uma an??lise objetiva sobre inicializa????o, escala, integra????o e cen??rios reais para escolher o framework certo em arquiteturas distribu??das.',
-          date: '30 de mar??o de 2026',
-          headings: ['Contexto', 'Inicializa????o e escala', 'Integra????o e produtividade', 'Casos reais em microsservi??os'],
+          title: 'Spring Boot vs Quarkus em microsservicos: comparacao pratica',
+          description: 'Comparativo pratico entre Spring Boot e Quarkus em arquiteturas de microsservicos: inicializacao, escala, integracao e casos reais.',
+          category: 'Java - Arquitetura',
+          subtitle: 'Uma analise objetiva sobre inicializacao, escala, integracao e cenarios reais para escolher o framework certo em arquiteturas distribuidas.',
+          date: '30 de marco de 2026',
+          headings: ['Contexto', 'Inicializacao e escala', 'Integracao e produtividade', 'Casos reais em microsservicos'],
           paragraphs: [
-            'Spring Boot e Quarkus s??o op????es maduras para backend Java moderno, mas com propostas diferentes. Spring Boot prioriza ecossistema amplo e produtividade enterprise, enquanto Quarkus foca em efici??ncia cloud-native.',
-            'Em microsservi??os, a escolha precisa considerar perfil de carga, custo operacional, experi??ncia do time e requisitos de observabilidade.',
-            'No tempo de inicializa????o, Quarkus costuma se destacar, principalmente com build nativo, favorecendo cen??rios com auto-scaling agressivo e workloads ef??meros.',
-            'Spring Boot segue muito forte em servi??os transacionais de longa dura????o, com escala previs??vel em Kubernetes quando existe tuning adequado.',
-            'Em ambientes corporativos com muitos legados e integra????es complexas, Spring Boot geralmente acelera entrega por causa da maturidade do ecossistema.',
-            'Em plataformas com alta densidade de servi??os, Quarkus pode reduzir custo de infraestrutura. Muitas empresas adotam estrat??gia h??brida, combinando os dois frameworks por dom??nio.'
+            'Spring Boot e Quarkus sao opcoes maduras para backend Java moderno, mas com propostas diferentes. Spring Boot prioriza ecossistema amplo e produtividade enterprise, enquanto Quarkus foca em eficiencia cloud-native.',
+            'Em microsservicos, a escolha precisa considerar perfil de carga, custo operacional, experiencia do time e requisitos de observabilidade.',
+            'No tempo de inicializacao, Quarkus costuma se destacar, principalmente com build nativo, favorecendo cenarios com auto-scaling agressivo e workloads efemeros.',
+            'Spring Boot segue muito forte em servicos transacionais de longa duracao, com escala previsivel em Kubernetes quando existe tuning adequado.',
+            'Em ambientes corporativos com muitos legados e integracoes complexas, Spring Boot geralmente acelera entrega por causa da maturidade do ecossistema.',
+            'Em plataformas com alta densidade de servicos, Quarkus pode reduzir custo de infraestrutura. Muitas empresas adotam estrategia hibrida, combinando os dois frameworks por dominio.'
           ],
           bullets: [
-            'Comparar cold start e consumo de mem??ria com benchmark pr??ximo da produ????o.',
-            'Avaliar esfor??o de integra????o com seguran??a, dados, mensageria e observabilidade.',
-            'Considerar maturidade do time e padr??es da plataforma existente.',
-            'Medir custo total de opera????o, n??o apenas m??tricas isoladas de startup.',
-            'Manter governan??a consistente de contratos, testes e telemetria independentemente do framework.'
+            'Comparar cold start e consumo de memoria com benchmark proximo da producao.',
+            'Avaliar esforco de integracao com seguranca, dados, mensageria e observabilidade.',
+            'Considerar maturidade do time e padroes da plataforma existente.',
+            'Medir custo total de operacao, nao apenas metricas isoladas de startup.',
+            'Manter governanca consistente de contratos, testes e telemetria independentemente do framework.'
           ]
         }
       }
