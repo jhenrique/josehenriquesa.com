@@ -387,10 +387,10 @@
     <p>&#169; 2026 Jose Henrique Santos Andrade</p>
   </footer>
 
-  <script src="js/site-effects.js"></script>
+  <script src="js/site-effects.js" defer></script>
   <script src="js/i18n.js" defer></script>
   <script>
-  (function(){
+  window.addEventListener('DOMContentLoaded', function(){
     window.SiteEffects?.initCursor('cur');
     window.SiteEffects?.initCanvasParticles('cv');
 
@@ -465,7 +465,7 @@
         btn.innerHTML = `<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> <span class="btn-text">${window.SiteI18n.error404Strings.submit}</span>`;
       });
     });
-  })();
+  });
   </script>
 </body>
 </html>

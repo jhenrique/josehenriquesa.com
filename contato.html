@@ -13,11 +13,11 @@
   <meta property="og:description" content="Fale com Jose Henrique Santos Andrade, desenvolvedor backend e dev Java para projetos, consultoria e parcerias tecnicas." />
   <meta property="og:url" content="https://josehenriquesa.com/contato.html" />
   <meta property="og:site_name" content="Jose Henrique Santos Andrade" />
-  <meta property="og:image" content="https://josehenriquesa.com/images/jose-henrique.png" />
+  <meta property="og:image" content="https://josehenriquesa.com/images/jose-henrique-640.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contato | Jose Henrique Santos Andrade" />
   <meta name="twitter:description" content="Fale com Jose Henrique Santos Andrade, desenvolvedor backend e dev Java para projetos, consultoria e parcerias tecnicas." />
-  <meta name="twitter:image" content="https://josehenriquesa.com/images/jose-henrique.png" />
+  <meta name="twitter:image" content="https://josehenriquesa.com/images/jose-henrique-640.png" />
   <link rel="alternate" hreflang="pt-BR" href="https://josehenriquesa.com/contato.html" />
   <link rel="alternate" hreflang="x-default" href="https://josehenriquesa.com/contato.html" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
@@ -510,10 +510,10 @@
     <p>&#169; 2026 Jose Henrique Santos Andrade</p>
   </footer>
 
-  <script src="js/site-effects.js"></script>
+  <script src="js/site-effects.js" defer></script>
   <script src="js/i18n.js" defer></script>
   <script>
-  (function(){
+  window.addEventListener('DOMContentLoaded', function(){
     window.SiteEffects?.initCursor('cur');
     window.SiteEffects?.initCanvasParticles('cv', { maxAlpha: 0.4 });
 
@@ -670,8 +670,9 @@
       }
     });
 
-  })();
+  });
   </script>
 </body>
 </html>
+
 
