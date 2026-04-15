@@ -74,7 +74,8 @@
           ['Java - Backend', 'Microservices with Spring Boot: best practices in 2026', 'How to structure modern Spring Boot projects with resilience, observability, and performance on Kubernetes.', 'Read article'],
           ['SAP Commerce', 'SAP Commerce Cloud: what you need to know before migrating', 'A practical guide to moving from on-premise Hybris to SAP Cloud - challenges and winning strategies.', 'Read article'],
           ['AI - Technology', 'AI in backend development: the future is already here', 'How Artificial Intelligence is transforming Java development, testing, and documentation.', 'Read article'],
-          ['Java - Architecture', 'Spring Boot vs Quarkus: which framework should you use for microservices?', 'A practical comparison of startup, scaling, integration, and real architecture scenarios.', 'Read article']
+          ['Java - Architecture', 'Spring Boot vs Quarkus: which framework should you use for microservices?', 'A practical comparison of startup, scaling, integration, and real architecture scenarios.', 'Read article'],
+          ['AI - Engineering', 'How Codex and Claude can accelerate development and shrink software teams', 'New coding assistants reduce repetitive execution and make architects and reviewers even more central.', 'Read article']
         ],
         contactLabel: '// 06 — Contact',
         contactTitle: 'Let’s<br><span class="stroke-text">Talk</span>',
@@ -173,7 +174,8 @@
           ['Java - Backend', 'Microservicios con Spring Boot: buenas practicas en 2026', 'Como estructurar proyectos modernos con Spring Boot, resiliencia, observabilidad y rendimiento en Kubernetes.', 'Leer articulo'],
           ['SAP Commerce', 'SAP Commerce Cloud: lo que necesitas saber antes de migrar', 'Guia practica sobre la migracion de Hybris on-premise a SAP Cloud: desafios y estrategias de exito.', 'Leer articulo'],
           ['IA - Tecnologia', 'IA en el desarrollo backend: el futuro ya llego', 'Como la Inteligencia Artificial esta transformando el desarrollo, las pruebas y la documentacion en Java.', 'Leer articulo'],
-          ['Java - Arquitectura', 'Spring Boot vs Quarkus: que framework usar en microservicios?', 'Comparacion practica de inicializacion, escala, integracion y escenarios reales de arquitectura.', 'Leer articulo']
+          ['Java - Arquitectura', 'Spring Boot vs Quarkus: que framework usar en microservicios?', 'Comparacion practica de inicializacion, escala, integracion y escenarios reales de arquitectura.', 'Leer articulo'],
+          ['IA - Ingenieria', 'Como Codex y Claude pueden acelerar el desarrollo y reducir equipos de software', 'Los nuevos asistentes de codigo reducen ejecucion repetitiva y vuelven mas centrales a arquitectos y revisores.', 'Leer articulo']
         ],
         contactLabel: '// 06 — Contacto', contactTitle: 'Vamos a<br><span class="stroke-text">Conversar</span>', contactText: 'Abierto a oportunidades, proyectos y colaboraciones. Respondo en hasta 24 horas.', contactLocation: 'São Paulo, SP · Brasil', sendMessage: 'Enviar mensaje →', footerEmail: 'Email'
       },
@@ -191,7 +193,8 @@
           ['Java - Backend', 'Microsservicos com Spring Boot: boas praticas em 2026', 'Como estruturar projetos Spring Boot modernos com resiliencia, observabilidade e performance em Kubernetes.', 'Ler artigo'],
           ['SAP Commerce', 'SAP Commerce Cloud: o que voce precisa saber antes de migrar', 'Guia pratico sobre migracao de Hybris on-premise para SAP Cloud - desafios e estrategias de sucesso.', 'Ler artigo'],
           ['IA - Tecnologia', 'IA no desenvolvimento backend: o futuro ja chegou', 'Como a Inteligencia Artificial esta transformando o desenvolvimento, testes e documentacao em Java.', 'Ler artigo'],
-          ['Java - Arquitetura', 'Spring Boot vs Quarkus: qual framework usar em microsservicos?', 'Comparativo pratico entre inicializacao, escala, integracao e cenarios reais para arquitetura backend.', 'Ler artigo']
+          ['Java - Arquitetura', 'Spring Boot vs Quarkus: qual framework usar em microsservicos?', 'Comparativo pratico entre inicializacao, escala, integracao e cenarios reais para arquitetura backend.', 'Ler artigo'],
+          ['IA - Engenharia', 'Como Codex e Claude podem acelerar o desenvolvimento e enxugar times', 'Novos assistentes de codigo reduzem execucao repetitiva e tornam arquitetos e revisores ainda mais centrais.', 'Ler artigo']
         ],
         contactLabel: '// 06 — Contato', contactTitle: 'Vamos<br><span class="stroke-text">Conversar</span>', contactText: 'Aberto a oportunidades, projetos e colaborações. Respondo em até 24h.', contactLocation: 'São Paulo, SP · Brasil', sendMessage: 'Enviar mensagem →', footerEmail: 'Email'
       },
@@ -315,6 +318,29 @@
             'Measure total cost of ownership, not only raw startup metrics.',
             'Use consistent governance for contracts, tests, and telemetry regardless of framework.'
           ]
+        },
+        'blog-ia-codex-claude-equipes-software.html': {
+          title: 'How Codex and Claude can accelerate development and shrink software teams',
+          description: 'How the latest coding assistants accelerate delivery, change team composition, and strengthen the role of architects and reviewers.',
+          category: 'AI - Engineering',
+          subtitle: 'The newest coding assistants shift work distribution: less manual execution, more architecture, review, and governance.',
+          date: 'April 15, 2026',
+          headings: ['Context', 'Where speed gains appear', 'What changes in team composition', 'Limits and governance'],
+          paragraphs: [
+            'The latest generations of coding assistants such as Codex and Claude are no longer limited to autocomplete. They now help navigate large codebases, propose refactors, write tests, summarize technical context, and speed up investigations that used to consume many engineering hours.',
+            'When used with enough context, these tools move the bottleneck in software delivery: less time spent on mechanical execution and more time spent on decision-making, architecture, review, and business-impact validation.',
+            'In practice, the biggest gains appear in high-volume and low-ambiguity tasks: boilerplate generation, regression tests, technical scaffolding, impact mapping, and operational documentation. That shortens the time between understanding a problem and delivering a first working version.',
+            'They also accelerate migrations, service standardization, log analysis, and technical spikes. Work that previously required several developers executing repetitive steps can now be driven by a smaller team supported by AI and strong supervision.',
+            'This does not mean engineering disappears. Critical systems, complex business rules, security, and regulatory contexts still depend on human judgment to decide what to build, what not to automate, and how to absorb failure before production.',
+            'The most efficient setup is not a company without developers, but a leaner and more senior structure: architects defining direction, reviewers protecting quality, and AI absorbing much of the repetitive implementation workload.'
+          ],
+          bullets: [
+            'Architects become more important because they define boundaries, contracts, trade-offs, and quality criteria for AI-assisted execution.',
+            'Technical reviewers become the main filter for security, consistency, performance, and domain alignment.',
+            'Smaller teams can deliver more in predictable work such as maintenance, integration, and incremental evolution.',
+            'Implementation roles shift from manual execution toward context operation, curation, and output verification.',
+            'Critical products still require strong human ownership; AI reduces effort, but it does not carry responsibility.'
+          ]
         }
       }
     },
@@ -428,6 +454,29 @@
             'Medir costo total de operacion, no solo metricas aisladas.',
             'Mantener gobernanza consistente de contratos, pruebas y telemetria en ambos frameworks.'
           ]
+        },
+        'blog-ia-codex-claude-equipes-software.html': {
+          title: 'Como Codex y Claude pueden acelerar el desarrollo y reducir equipos de software',
+          description: 'Como los nuevos asistentes de codigo aceleran la entrega, cambian la composicion del equipo y refuerzan el papel de arquitectos y revisores.',
+          category: 'IA - Ingenieria',
+          subtitle: 'Los nuevos asistentes de codigo cambian la distribucion del trabajo: menos ejecucion manual, mas arquitectura, revision y gobernanza.',
+          date: '15 de abril de 2026',
+          headings: ['Contexto', 'Donde aparecen las ganancias de velocidad', 'Que cambia en la composicion de los equipos', 'Limites y gobernanza'],
+          paragraphs: [
+            'Las nuevas versiones de asistentes de codigo como Codex y Claude dejaron de ser simples copilotos de autocompletado. Hoy ayudan a navegar bases grandes, proponer refactors, escribir pruebas, resumir contexto tecnico y acelerar investigaciones que antes consumian muchas horas del equipo.',
+            'Cuando se usan con suficiente contexto, estas herramientas mueven el cuello de botella de la entrega: menos tiempo en ejecucion mecanica y mas tiempo en decision, arquitectura, revision y validacion de impacto real en el negocio.',
+            'En la practica, la mayor aceleracion aparece en tareas de alto volumen y baja ambiguedad: boilerplate, pruebas de regresion, esqueletos tecnicos, mapeo de impacto y documentacion operativa. Eso reduce el tiempo entre entender un problema y entregar una primera version funcional.',
+            'Tambien aceleran migraciones, estandarizacion entre servicios, analisis de logs y spikes tecnicos. Trabajo que antes exigia varios desarrolladores ejecutando pasos repetitivos ahora puede ser conducido por un equipo menor apoyado por IA y supervision fuerte.',
+            'Eso no significa que la ingenieria desaparezca. Sistemas criticos, reglas complejas, seguridad y contextos regulatorios siguen dependiendo de criterio humano para decidir que construir, que no automatizar y como absorber errores antes de produccion.',
+            'El escenario mas eficiente no es una empresa sin desarrolladores, sino una estructura mas pequena y mas senior: arquitectos definiendo direccion, revisores protegiendo la calidad y la IA absorbiendo buena parte de la implementacion repetitiva.'
+          ],
+          bullets: [
+            'Los arquitectos ganan peso porque definen limites, contratos, trade-offs y criterios de calidad para la ejecucion asistida por IA.',
+            'Los revisores tecnicos se vuelven el filtro principal para seguridad, consistencia, performance y alineacion con el dominio.',
+            'Equipos menores pueden entregar mas en frentes previsibles como mantenimiento, integracion y evolucion incremental.',
+            'Los roles de implementacion migran de la ejecucion manual hacia operacion de contexto, curaduria y verificacion de salida.',
+            'Los productos criticos siguen necesitando ownership humano fuerte; la IA reduce esfuerzo, pero no asume responsabilidad.'
+          ]
         }
       }
     },
@@ -540,6 +589,29 @@
             'Considerar maturidade do time e padroes da plataforma existente.',
             'Medir custo total de operacao, nao apenas metricas isoladas de startup.',
             'Manter governanca consistente de contratos, testes e telemetria independentemente do framework.'
+          ]
+        },
+        'blog-ia-codex-claude-equipes-software.html': {
+          title: 'Como Codex e Claude podem acelerar o desenvolvimento e enxugar times',
+          description: 'Como os novos assistentes de codigo aceleram entrega, mudam a composicao dos times e reforcam o papel de arquitetos e revisores.',
+          category: 'IA - Engenharia',
+          subtitle: 'As novas geracoes de assistentes de codigo mudam a distribuicao do trabalho: menos execucao manual, mais arquitetura, revisao e governanca.',
+          date: '15 de abril de 2026',
+          headings: ['Contexto', 'Onde ganham velocidade', 'O que muda na composicao dos times', 'Limites e governanca'],
+          paragraphs: [
+            'As novas versoes de assistentes de codigo como Codex e Claude deixaram de ser apenas copilotos de autocomplete. Hoje ajudam a navegar bases grandes, propor refactors, escrever testes, resumir contexto tecnico e acelerar investigacoes que antes consumiam horas de engenharia.',
+            'Quando usadas com contexto suficiente, essas ferramentas deslocam o gargalo da entrega: menos tempo em execucao mecanica e mais tempo em decisao, arquitetura, revisao e validacao de impacto real no negocio.',
+            'Na pratica, o maior ganho aparece em tarefas de alto volume e baixa ambiguidade: boilerplate, testes de regressao, esqueleto tecnico, mapeamento de impacto e documentacao operacional. Isso encurta o tempo entre entender um problema e entregar a primeira versao funcional.',
+            'Tambem existe aceleracao forte em migracoes, padronizacao entre servicos, analise de logs e spikes tecnicos. O que antes exigia varios desenvolvedores executando etapas repetitivas pode ser conduzido por uma equipe menor apoiada por IA e supervisao forte.',
+            'Isso nao significa que a engenharia desaparece. Sistemas criticos, regra de negocio complexa, seguranca e contexto regulatorio continuam dependendo de criterio humano para decidir o que construir, o que nao automatizar e como absorver erros antes da producao.',
+            'O cenario mais eficiente nao e uma empresa sem desenvolvedores, e sim uma estrutura mais enxuta e mais senior: arquitetos definindo direcao, revisores protegendo a qualidade e IA absorvendo boa parte da implementacao repetitiva.'
+          ],
+          bullets: [
+            'Arquitetos ganham mais peso ao definir limites, contratos, trade-offs e criterios de qualidade para a execucao assistida por IA.',
+            'Revisores tecnicos tornam-se o filtro principal para seguranca, consistencia, performance e aderencia ao dominio.',
+            'Times menores podem entregar mais em frentes previsiveis como manutencao, integracao e evolucao incremental.',
+            'O papel de implementacao migra da execucao manual para operacao de contexto, curadoria e verificacao de saida.',
+            'Produtos criticos continuam exigindo ownership humano forte; a IA reduz esforco, mas nao assume responsabilidade.'
           ]
         }
       }
