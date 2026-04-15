@@ -7,6 +7,9 @@
   const html = document.documentElement;
   const page = document.body.dataset.page;
   const listeners = [];
+  const ALLOWED_HTML_TAGS = new Set(['strong', 'em', 'span', 'br']);
+  const ALLOWED_SPAN_CLASSES = new Set(['stroke-text', 'tag-active', 'req']);
+  const ALLOWED_INLINE_STYLE = 'color:var(--orange)';
 
   const dict = {
     en: {
@@ -567,9 +570,55 @@
     if (el && value != null) el.textContent = value;
   }
 
+  function sanitizeHtml(value) {
+    const template = document.createElement('template');
+    template.innerHTML = String(value ?? '');
+
+    const sanitizeNode = (node) => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        return document.createTextNode(node.textContent || '');
+      }
+
+      if (node.nodeType !== Node.ELEMENT_NODE) {
+        return document.createTextNode('');
+      }
+
+      const tag = node.tagName.toLowerCase();
+      if (!ALLOWED_HTML_TAGS.has(tag)) {
+        return document.createTextNode(node.textContent || '');
+      }
+
+      const clean = document.createElement(tag);
+      if (tag === 'span') {
+        const classes = (node.getAttribute('class') || '')
+          .split(/\s+/)
+          .filter((className) => ALLOWED_SPAN_CLASSES.has(className));
+        if (classes.length) clean.className = classes.join(' ');
+
+        if (node.getAttribute('aria-hidden') === 'true') {
+          clean.setAttribute('aria-hidden', 'true');
+        }
+
+        const styleValue = (node.getAttribute('style') || '').replace(/\s+/g, '');
+        if (styleValue === ALLOWED_INLINE_STYLE.replace(/\s+/g, '')) {
+          clean.setAttribute('style', ALLOWED_INLINE_STYLE);
+        }
+      }
+
+      node.childNodes.forEach((child) => clean.appendChild(sanitizeNode(child)));
+      return clean;
+    };
+
+    const fragment = document.createDocumentFragment();
+    template.content.childNodes.forEach((node) => fragment.appendChild(sanitizeNode(node)));
+    return fragment;
+  }
+
   function htmlSet(selector, value) {
     const el = document.querySelector(selector);
-    if (el && value != null) el.innerHTML = value;
+    if (el && value != null) {
+      el.replaceChildren(sanitizeHtml(value));
+    }
   }
 
   function attr(selector, name, value) {
@@ -582,16 +631,21 @@
     const el = document.querySelector(selector);
     if (!el || value == null) return;
     const icon = el.querySelector('svg');
-    if (icon) el.innerHTML = `${icon.outerHTML} ${value}`;
-    else el.textContent = value;
+    el.replaceChildren();
+    if (icon) el.appendChild(icon.cloneNode(true));
+    el.appendChild(document.createTextNode(` ${value}`));
   }
 
   function keepArrowValue(selector, value) {
     const el = document.querySelector(selector);
     if (!el || value == null) return;
     const icon = el.querySelector('svg');
-    if (icon) el.innerHTML = `${value} ${icon.outerHTML}`;
-    else el.textContent = value;
+    el.replaceChildren();
+    el.appendChild(document.createTextNode(value));
+    if (icon) {
+      el.appendChild(document.createTextNode(' '));
+      el.appendChild(icon.cloneNode(true));
+    }
   }
 
   function list(selector, values, mode = 'text') {
@@ -599,7 +653,7 @@
     document.querySelectorAll(selector).forEach((el, index) => {
       const value = values[index];
       if (value == null) return;
-      if (mode === 'html') el.innerHTML = value;
+      if (mode === 'html') el.replaceChildren(sanitizeHtml(value));
       else el.textContent = value;
     });
   }
@@ -648,8 +702,8 @@
       const [titleValue, subtitleValue] = entry;
       const strong = card.querySelector('strong');
       const span = card.querySelector('span');
-      if (strong) strong.innerHTML = titleValue;
-      if (span) span.innerHTML = subtitleValue;
+      if (strong) strong.replaceChildren(sanitizeHtml(titleValue));
+      if (span) span.replaceChildren(sanitizeHtml(subtitleValue));
     });
     text('#sobre .btn-fill', t.contactMe);
     text('#experiencia .section-label', t.experienceLabel);
@@ -663,7 +717,7 @@
       const companyEl = card.querySelector('.exp-company');
       const timeEl = card.querySelector('.exp-time');
       const descEl = card.querySelector('.exp-desc');
-      if (h3) h3.innerHTML = role;
+      if (h3) h3.replaceChildren(sanitizeHtml(role));
       if (companyEl) companyEl.textContent = company;
       if (timeEl) timeEl.textContent = timeValue;
       if (descEl) descEl.textContent = desc;
@@ -696,14 +750,25 @@
       if (catEl) catEl.textContent = cat;
       if (titleEl) titleEl.textContent = titleValue;
       if (descEl) descEl.textContent = desc;
-      if (linkEl) linkEl.innerHTML = `${link} <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
+      if (linkEl) {
+        const icon = linkEl.querySelector('svg');
+        linkEl.replaceChildren();
+        linkEl.appendChild(document.createTextNode(link));
+        if (icon) {
+          linkEl.appendChild(document.createTextNode(' '));
+          linkEl.appendChild(icon.cloneNode(true));
+        }
+      }
     });
     text('#contato .section-label', t.contactLabel);
     htmlSet('#contato .big-title', t.contactTitle);
     text('#contato .contact-left > p:not(.contact-loc)', t.contactText);
     const contactLoc = document.querySelector('#contato .contact-loc');
     if (contactLoc) {
-      contactLoc.innerHTML = '<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>' + t.contactLocation;
+      const icon = contactLoc.querySelector('svg');
+      contactLoc.replaceChildren();
+      if (icon) contactLoc.appendChild(icon.cloneNode(true));
+      contactLoc.appendChild(document.createTextNode(t.contactLocation));
     }
     keepArrowValue('#contato .contact-right .btn-fill', t.sendMessage);
     text('footer .footer-links > a:first-child', t.footerEmail);
@@ -760,7 +825,13 @@
     document.title = t.title;
     attr('header .logo', 'aria-label', t.homeAria);
     attr('header .socials', 'aria-label', t.socials);
-    htmlSet('header .nav-home', '<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>' + t.backHome);
+    const navHome = document.querySelector('header .nav-home');
+    if (navHome) {
+      const icon = navHome.querySelector('svg');
+      navHome.replaceChildren();
+      if (icon) navHome.appendChild(icon.cloneNode(true));
+      navHome.appendChild(document.createTextNode(t.backHome));
+    }
     text('.phrase-eyebrow', t.eyebrow);
     htmlSet('.phrase-big', t.phrase);
     htmlSet('.phrase-sub', t.phraseSub);

@@ -270,6 +270,24 @@
     });
   }
 
+  function initImageFallbacks() {
+    queryAll('img[data-fallback-text], img[data-hide-on-error="true"]').forEach((image) => {
+      const applyFallback = () => {
+        if (image.dataset.hideOnError === 'true') {
+          image.style.display = 'none';
+          return;
+        }
+
+        const fallbackText = image.dataset.fallbackText;
+        if (!fallbackText || !image.parentElement) return;
+        image.parentElement.textContent = fallbackText;
+      };
+
+      image.addEventListener('error', applyFallback, { once: true });
+      if (image.complete && image.naturalWidth === 0) applyFallback();
+    });
+  }
+
   function initPage() {
     initCursor();
     initNavigation();
@@ -280,6 +298,7 @@
     initCounters();
     initHeroParallax();
     initCardTilt();
+    initImageFallbacks();
   }
 
   if (document.readyState === 'loading') {
